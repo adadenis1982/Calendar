@@ -1,0 +1,27 @@
+/* Colors */
+
+$primary_btn_color: #006fca;
+$btn_txt_color: #f2f5f8;
+
+$bg_color: #f4f4f4;
+$select_bg_color: #c1e4ff;
+
+$second_txt_color: #787878;
+
+/* icons */
+
+$search-icon: '../../assets/icon-search-128.png';
+$arrow-icon: '../../assets/icon-arrow.png';
+
+/* mixins */
+
+$phone : '(max-width: 480px)';
+$tablet-portrait: '(max-width: 767px)';
+$tablet-landscape: '(min-width: 768px) and (max-width: 979px)';
+$large-desktop: '(min-width: 1200px)';
+
+@mixin respond-to($media) {
+  @media only screen and #{$media} {
+    @content;
+  }
+}
